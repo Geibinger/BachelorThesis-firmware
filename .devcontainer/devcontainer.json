@@ -1,0 +1,32 @@
+{
+	"name": "ESP-IDF micro-ROS DevContainer",
+	"build": {
+	  "dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+	  "--privileged",
+	  "--volume=/dev:/dev",
+	  "--volume=/etc/timezone:/etc/timezone:ro"
+	],
+	"remoteUser": "root",
+  
+	"customizations": {
+	  "vscode": {
+		"settings": {
+		  "terminal.integrated.defaultProfile.linux": "bash",
+		  "idf.espIdfPath": "/opt/esp/idf",
+		  "idf.toolsPath": "/opt/esp",
+		  "idf.gitPath": "/usr/bin/git"
+		},
+		"extensions": [
+		  "espressif.esp-idf-extension",
+		  "espressif.esp-idf-web",
+		  "ms-vscode.cpptools",
+		  "ms-azuretools.vscode-docker",
+		  "ms-vscode.cmake-tools",
+		  "ms-python.python"
+		]
+	  }
+	}
+  }
+  

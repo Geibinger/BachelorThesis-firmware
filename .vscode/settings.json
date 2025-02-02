@@ -1,0 +1,22 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPath": "/opt/esp/idf",
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ],
+    "idf.port": "/dev/ttyUSB0",
+    "idf.toolsPath": "/opt/esp",
+    "files.associations": {
+        "error_handling.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "span": "c",
+        "esp32_serial_transport.h": "c",
+        "joints_iws.h": "c",
+        "type_utilities.h": "c",
+        "uros_network_interfaces.h": "c",
+        "executor.h": "c"
+    },
+    "idf.flashType": "UART"
+}
