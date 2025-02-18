@@ -16,7 +16,8 @@
         "joints_iws.h": "c",
         "type_utilities.h": "c",
         "uros_network_interfaces.h": "c",
-        "executor.h": "c"
+        "executor.h": "c",
+        "esp_system.h": "c"
     },
     "idf.flashType": "UART"
 }

@@ -14,6 +14,18 @@ menu "firmware settings"
 
     config RMW_UXRCE_TRANSPORT_CUSTOM
         bool "Use Custom micro-ROS transport"
-        default n
+        default y
+
+    config MICRO_ROS_UART_PORT
+        int "UART port for micro-ROS communication"
+        default 1
+        help
+            Use this UART (e.g. UART_NUM_1) for the micro-ROS custom transport.
+    
+    config DEBUG_UART_PORT
+        int "UART port for debug output"
+        default 0
+        help
+            Use this UART (e.g. UART_NUM_0 or the native USB) for debugging/logging.
         
 endmenu
